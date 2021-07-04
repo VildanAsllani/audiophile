@@ -3,6 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Raleway", sans-serif;
+  color: #000000;
 }
 
 html {
@@ -20,4 +21,47 @@ a {
 h1, h2, h3, h4, h5, h6 {
   padding: 0px;
   margin: 0px;
+}
+
+.center-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0px 10px;
+}
+
+header {
+  width: 100%;
+  background-color: #191919;
+}
+header nav {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+header nav .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+header nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+header nav ul a {
+  color: #F1F1F1;
+}
+header nav ul li {
+  float: left;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+header nav .shopping-cart {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -5,11 +5,13 @@ $primaryColor:#D77D4A;
 $primaryFontColor: #000000;
 $lightFontColor:#C3C3C3;
 $lightBackgroundColor:#F1F1F1;
+$blackBackgroundColor:#191919;
 
 body{
     margin: 0px;
     padding: 0px;
     font-family: $fontFamily;
+    color: $primaryFontColor;
 }
 html{
     scroll-behavior: smooth;
@@ -23,4 +25,49 @@ a{
 h1,h2,h3,h4,h5,h6 {
     padding: 0px;
     margin: 0px;
+}
+.center-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 10px;
+}
+
+
+header{
+    width: 100%;
+    background-color: $blackBackgroundColor;
+    nav{
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $lightBackgroundColor;
+        .logo{
+            // background-color: rebeccapurple;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        ul{
+            list-style:none;
+            margin: 0px;
+            padding: 0px;
+            // background-color: yellow;
+            a{
+                color: $lightBackgroundColor;
+            }
+            li{
+                float: left;
+                padding: 5px 20px;
+                font-weight: 500;
+                font-size: 13px;
+                letter-spacing: 2px;
+            }
+        }
+        .shopping-cart{
+            color: white;
+        }
+    }
 }
