@@ -3,9 +3,9 @@
 $fontFamily: 'Raleway', sans-serif;
 $primaryColor:#D77D4A;
 $primaryFontColor: #000000;
-$lightFontColor:#C3C3C3;
+$lightFontColor:#b4b4b4;
 $lightBackgroundColor:#F1F1F1;
-$blackBackgroundColor:#191919;
+$blackBackgroundColor:#0C0C0C;
 
 body{
     margin: 0px;
@@ -33,7 +33,19 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 1200px;
     padding: 0px 10px;
 }
-
+.btn{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-accent{
+    background-color: $primaryColor;
+    color: $lightBackgroundColor;
+    min-width: 200px;
+}
 
 header{
     width: 100%;
@@ -43,10 +55,10 @@ header{
         height: 80px;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid $lightBackgroundColor;
+        border-bottom: 1px solid $lightFontColor;
         .logo{
             // background-color: rebeccapurple;
-            color: white;
+            color:$lightBackgroundColor;
             font-weight: bold;
             font-size: 30px;
         }
@@ -67,7 +79,39 @@ header{
             }
         }
         .shopping-cart{
-            color: white;
+            color: $lightBackgroundColor;
+        }
+    }
+}
+section{
+    background-color: $blackBackgroundColor;
+    .cta{
+        color: $lightBackgroundColor;
+        display: grid;
+        max-height: auto;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        min-height: 100vh;
+        height: auto;
+        .cta-description{
+            small{
+                color: $lightFontColor;
+                font-size: 15px;
+                letter-spacing: 5px;
+            }
+            h1{
+                font-size: 50px;
+                margin: 20px 0px;
+            }
+            p{
+                color: $lightFontColor;
+                line-height: 30px;
+            }
+        }
+        .cta-image{
+            img{
+                width: 100%;
+            }
         }
     }
 }

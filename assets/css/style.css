@@ -31,19 +31,34 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 10px;
 }
 
+.btn {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-accent {
+  background-color: #D77D4A;
+  color: #F1F1F1;
+  min-width: 200px;
+}
+
 header {
   width: 100%;
-  background-color: #191919;
+  background-color: #0C0C0C;
 }
 header nav {
   display: flex;
   height: 80px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #b4b4b4;
 }
 header nav .logo {
-  color: white;
+  color: #F1F1F1;
   font-weight: bold;
   font-size: 30px;
 }
@@ -63,5 +78,34 @@ header nav ul li {
   letter-spacing: 2px;
 }
 header nav .shopping-cart {
-  color: white;
+  color: #F1F1F1;
+}
+
+section {
+  background-color: #0C0C0C;
+}
+section .cta {
+  color: #F1F1F1;
+  display: grid;
+  max-height: auto;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 100vh;
+  height: auto;
+}
+section .cta .cta-description small {
+  color: #b4b4b4;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+section .cta .cta-description h1 {
+  font-size: 50px;
+  margin: 20px 0px;
+}
+section .cta .cta-description p {
+  color: #b4b4b4;
+  line-height: 30px;
+}
+section .cta .cta-image img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
