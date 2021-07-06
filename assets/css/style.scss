@@ -3,7 +3,7 @@
 $fontFamily: 'Raleway', sans-serif;
 $primaryColor:#D77D4A;
 $primaryFontColor: #000000;
-$lightFontColor:#b4b4b4;
+$lightFontColor:#7e7e7e;
 $lightBackgroundColor:#F1F1F1;
 $blackBackgroundColor:#0C0C0C;
 
@@ -21,6 +21,7 @@ html{
 }
 a{
     text-decoration: none;
+    color: $blackBackgroundColor;
 }
 h1,h2,h3,h4,h5,h6 {
     padding: 0px;
@@ -34,6 +35,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0px 10px;
 }
 .btn{
+    min-width: 200px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -44,7 +46,29 @@ h1,h2,h3,h4,h5,h6 {
 .btn-accent{
     background-color: $primaryColor;
     color: $lightBackgroundColor;
-    min-width: 200px;
+    transition: opacity .3s;
+    &:hover{
+        opacity: .8;
+    }
+}
+.btn-default{
+    border:1px solid #747474;
+    transition: all .3s;
+    &:hover{
+        opacity: .8;
+        // border-color: $primaryColor;
+        // // color: $primaryColor;
+        // background-color: $primaryColor;
+        // color: $lightBackgroundColor;
+    }
+}
+.btn-black{
+    background-color: $blackBackgroundColor;
+    color: $lightBackgroundColor;
+    transition: opacity .3s;
+    &:hover{
+        opacity: .9;
+    }
 }
 
 header{
@@ -52,7 +76,7 @@ header{
     background-color: $blackBackgroundColor;
     nav{
         display: flex;
-        height: 80px;
+        height: 100px;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid $lightFontColor;
@@ -104,7 +128,7 @@ section{
                 margin: 20px 0px;
             }
             p{
-                color: $lightFontColor;
+                color: $lightBackgroundColor;
                 line-height: 30px;
             }
         }
@@ -112,6 +136,35 @@ section{
             img{
                 width: 100%;
             }
+        }
+    }
+}
+
+.product-grid{
+    // background-color: red;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .product{
+        padding: 20px;
+        display: grid;
+        grid-row-gap: 30px;
+        .image{
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+            background-color: $lightBackgroundColor;
+            img{
+            max-width: 50%;
+            }
+        }
+        h3{
+            text-align: center;
+        }
+        .btn{
+            justify-self: center;
         }
     }
 }

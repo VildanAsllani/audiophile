@@ -16,6 +16,7 @@ html {
 
 a {
   text-decoration: none;
+  color: #0C0C0C;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
+  min-width: 200px;
   height: 50px;
   line-height: 50px;
   text-align: center;
@@ -43,7 +45,27 @@ h1, h2, h3, h4, h5, h6 {
 .btn-accent {
   background-color: #D77D4A;
   color: #F1F1F1;
-  min-width: 200px;
+  transition: opacity 0.3s;
+}
+.btn-accent:hover {
+  opacity: 0.8;
+}
+
+.btn-default {
+  border: 1px solid #747474;
+  transition: all 0.3s;
+}
+.btn-default:hover {
+  opacity: 0.8;
+}
+
+.btn-black {
+  background-color: #0C0C0C;
+  color: #F1F1F1;
+  transition: opacity 0.3s;
+}
+.btn-black:hover {
+  opacity: 0.9;
 }
 
 header {
@@ -52,10 +74,10 @@ header {
 }
 header nav {
   display: flex;
-  height: 80px;
+  height: 100px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #b4b4b4;
+  border-bottom: 1px solid #7e7e7e;
 }
 header nav .logo {
   color: #F1F1F1;
@@ -94,7 +116,7 @@ section .cta {
   height: auto;
 }
 section .cta .cta-description small {
-  color: #b4b4b4;
+  color: #7e7e7e;
   font-size: 15px;
   letter-spacing: 5px;
 }
@@ -103,9 +125,37 @@ section .cta .cta-description h1 {
   margin: 20px 0px;
 }
 section .cta .cta-description p {
-  color: #b4b4b4;
+  color: #F1F1F1;
   line-height: 30px;
 }
 section .cta .cta-image img {
   width: 100%;
+}
+
+.product-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.product-grid .product {
+  padding: 20px;
+  display: grid;
+  grid-row-gap: 30px;
+}
+.product-grid .product .image {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  background-color: #F1F1F1;
+}
+.product-grid .product .image img {
+  max-width: 50%;
+}
+.product-grid .product h3 {
+  text-align: center;
+}
+.product-grid .product .btn {
+  justify-self: center;
 }/*# sourceMappingURL=style.css.map */
