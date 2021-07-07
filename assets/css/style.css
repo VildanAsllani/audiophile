@@ -233,7 +233,7 @@ header nav .shopping-cart {
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .section-headphone .left {
   max-width: 400px;
@@ -246,4 +246,25 @@ header nav .shopping-cart {
 .section-headphone .left h1 {
   margin-bottom: 30px;
   font-size: 40px;
+}
+
+.two-columns {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.two-columns .left-column {
+  border-radius: 10px;
+  padding: 100px;
+  background-color: #F1F1F1;
+}
+.two-columns .left-column h1 {
+  margin-bottom: 30px;
+}
+.two-columns .right-column {
+  border-radius: 10px;
+  background-image: url("/images/luke-peterson-lUMj2Zv5HUE-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
