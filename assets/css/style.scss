@@ -19,13 +19,22 @@ html{
 *{
     box-sizing: border-box;
 }
+p{
+    line-height: 25px;
+}
 a{
     text-decoration: none;
     color: $blackBackgroundColor;
 }
+img{
+    max-width: 100%;
+}
 h1,h2,h3,h4,h5,h6 {
     padding: 0px;
     margin: 0px;
+}
+.light-text{
+    color: $lightFontColor;
 }
 .center-div{
     margin-left: auto;
@@ -107,7 +116,7 @@ header{
         }
     }
 }
-section{
+.call-to-action{
     background-color: $blackBackgroundColor;
     .cta{
         color: $lightBackgroundColor;
@@ -119,7 +128,7 @@ section{
         height: auto;
         .cta-description{
             small{
-                color: $lightFontColor;
+                // color: $lightFontColor;
                 font-size: 15px;
                 letter-spacing: 5px;
             }
@@ -142,22 +151,24 @@ section{
 
 .product-grid{
     // background-color: red;
-    margin-top: 20px;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    // grid-column-gap: 40px;
     .product{
         padding: 20px;
         display: grid;
         grid-row-gap: 30px;
         .image{
+            padding: 50px;
             border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            aspect-ratio: 1/1;
+            // aspect-ratio: 1/1;
             background-color: $lightBackgroundColor;
             img{
-            max-width: 50%;
+                max-width: 70%;
             }
         }
         h3{
@@ -165,6 +176,86 @@ section{
         }
         .btn{
             justify-self: center;
+        }
+    }
+}
+
+.section-speaker{
+    margin-top: 100px;
+    overflow: hidden;
+    padding-top: 70px;
+    border-radius: 10px;
+    background-color: $primaryColor;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .speaker-image{
+        // background-color: yellowgreen;
+        display: flex;
+        justify-content: center;
+        // align-items: end;
+        img{
+            max-width: 60%;
+            margin-bottom: -60px;
+            z-index: 2;
+        }
+        .round-one, .round-two, .round-three{
+            border:1px solid rgba(255, 255, 255, 0.226);
+            position: absolute;
+            border-radius: 50%;
+        }
+        .round-one{
+            height: 300px;
+            width: 300px;
+        }
+        .round-two{
+            margin-top: -25px;
+            height: 350px;
+            width: 350px;
+        }
+        .round-three{
+            margin-top: -100px;
+            height: 600px;
+            width: 600px;
+        }
+    }
+    .speaker-description{
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            h1{
+                font-size: 50px;
+                color: $lightBackgroundColor;
+                margin-bottom: 20px;
+            }
+        .light-text{
+            color: white;
+            opacity: .8;
+            margin-bottom:30px;
+        }
+    }
+}
+
+.section-headphone{
+    background-image: url('/images/music.png');
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 50px;
+    .left{
+        // background-color: $primaryColor;
+        max-width: 400px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            margin-bottom: 30px;
+            font-size: 40px;
         }
     }
 }
